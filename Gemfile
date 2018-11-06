@@ -10,12 +10,12 @@ gem "rack-cors"
 
 group :development do
   gem "foreman"
-  gem "rubocop", require: false
-  gem "rubocop-rspec", require: false
 end
 
 group :development, :test do
   gem "pry-rails"
+  gem "rubocop", require: false
+  gem "rubocop-rspec", require: false
 end
 
 group :development do
