@@ -58,6 +58,9 @@ Style/EmptyMethod:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
+Style/ClassAndModuleChildren:
+  Enabled: false
+
 Style/StringMethods:
   Enabled: true
 
