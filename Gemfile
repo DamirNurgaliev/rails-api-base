@@ -2,18 +2,18 @@ source "https://rubygems.org"
 
 ruby "2.3.7"
 
-gem "bootsnap", require: false
+gem "rails", "5.2.1"
 gem "pg"
+
 gem "puma"
 gem "rack-cors"
-gem "rails", "5.2.1"
 
 group :development do
   gem "foreman"
 end
 
 group :development, :test do
-  gem "byebug"
+  gem "pry-rails"
 end
 
 group :development do
