@@ -5,6 +5,7 @@ ruby "2.5.1"
 gem "pg"
 gem "rails", "5.2.1"
 
+gem "active_model_serializers"
 gem "puma"
 gem "rack-cors"
 
