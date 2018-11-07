@@ -1,5 +1,4 @@
 shared_context "with JSON API Headers" do
-  header "Content-Type", "application/vnd.api+json"
   header "Accept", "application/vnd.api+json"
 end
 
