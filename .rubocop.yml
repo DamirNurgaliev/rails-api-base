@@ -18,6 +18,9 @@ Rails/HasAndBelongsToMany:
 Rails/OutputSafety:
   Enabled: false
 
+Rails/RedundantReceiverInWithOptions:
+  Enabled: false
+
 RSpec/MultipleExpectations:
   Enabled: false
 
@@ -31,6 +34,9 @@ RSpec/MessageSpies:
   EnforcedStyle: receive
 
 RSpec/LetSetup:
+  Enabled: false
+
+RSpec/EmptyExampleGroup:
   Enabled: false
 
 Style/AndOr:

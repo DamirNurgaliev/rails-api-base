@@ -6,7 +6,7 @@ describe V1::RegistrationsController do
     include_context "with JSON API Headers"
 
     post "/v1/registrations" do
-      with_options scope: %i(data attributes) do |klass|
+      with_options scope: %i[data attributes] do |klass|
         klass.parameter :email, "Email", required: true
         klass.parameter :full_name, "Full Name", required: true
         klass.parameter :password, "Password", required: true
