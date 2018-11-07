@@ -7,7 +7,6 @@ gem "rails", "5.2.1"
 
 gem "active_model_serializers"
 gem "bcrypt"
-gem "decent_exposure"
 gem "interactor"
 gem "knock"
 gem "puma"

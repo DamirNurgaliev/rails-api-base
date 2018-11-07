@@ -5,6 +5,7 @@ class CreateJwt
 
   def call
     context.fail!(code: :invalid_credentials) unless authenticated?
+
     context.jwt_token = jwt_token
   end
 
