@@ -3,3 +3,4 @@
 set -e
 
 bin/rubocop --display-style-guide --config .rubocop.yml
+bin/rspec spec

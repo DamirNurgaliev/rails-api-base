@@ -30,6 +30,9 @@ RSpec/RepeatedDescription:
 RSpec/MessageSpies:
   EnforcedStyle: receive
 
+RSpec/LetSetup:
+  Enabled: false
+
 Style/AndOr:
   Enabled: false
 

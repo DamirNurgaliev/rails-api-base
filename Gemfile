@@ -17,6 +17,9 @@ group :development do
 end
 
 group :development, :test do
+  gem "dotenv-rails"
+  gem "factory_bot_rails"
+  gem "faker"
   gem "pry-rails"
   gem "rubocop", require: false
   gem "rubocop-rspec", require: false
@@ -25,4 +28,9 @@ end
 group :development do
   gem "spring"
   gem "spring-commands-rspec"
+end
+
+group :test do
+  gem "rspec-rails"
+  gem "rspec_api_documentation"
 end
