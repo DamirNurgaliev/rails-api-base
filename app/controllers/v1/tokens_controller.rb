@@ -1,13 +1,13 @@
 class V1::TokensController < V1::BaseController
-  skip_before_action :authenticate_user!
+  skip_before_action :authenticate_user
 
   def create
     result = CreateJwt.call(authentication_params)
 
     if result.success?
-      respond_with_resource(result.jwt_token, status: :created, location: nil)
+      render_data result.jwt_token, status: :created
     else
-      respond_with_error(result.code)
+      head :unauthorized
     end
   end
 

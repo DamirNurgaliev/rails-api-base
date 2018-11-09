@@ -1,20 +1,20 @@
 class V1::ProfilesController < V1::BaseController
   def show
-    respond_with_resource(current_user, location: :v1_profile)
+    render_data current_user
   end
 
   def update
     if current_user.update(user_params)
-      respond_with_resource(current_user, status: :ok, location: :v1_profile)
+      render_data current_user, status: :ok
     else
-      respond_with_resource_errors(current_user)
+      render_error current_user
     end
   end
 
   def destroy
     current_user.destroy
 
-    respond_with_resource(current_user, location: nil)
+    render_data current_user
   end
 
   private
