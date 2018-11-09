@@ -13,18 +13,16 @@ describe Users::Create do
 
     it "creates User" do
       expect { call }.to change(User, :count).by(1)
-    end
 
-    it "sets up user fields from params" do
       expect(call.user.email).to eq "test@test.test"
     end
 
     context "when params invalid" do
       let(:params) { { email: "wrong email" } }
 
-      it { is_expected.to be_failure }
-
       it "does NOT create User" do
+        expect(call).to be_failure
+
         expect { call }.not_to change(User, :count)
       end
     end

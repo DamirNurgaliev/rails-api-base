@@ -1,11 +1,11 @@
 require "rails_helper"
 require "rspec_api_documentation/dsl"
 
-describe V1::RegistrationsController do
-  resource "JSON API - Registrations" do
+describe V1::UsersController do
+  resource "JSON API - Users" do
     include_context "with JSON API Headers"
 
-    post "/v1/registrations" do
+    post "/v1/users" do
       with_options scope: %i[data attributes] do |klass|
         klass.parameter :email, "Email", required: true
         klass.parameter :full_name, "Full Name", required: true

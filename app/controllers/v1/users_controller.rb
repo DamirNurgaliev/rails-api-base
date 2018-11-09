@@ -21,7 +21,7 @@ class V1::UsersController < V1::BaseController
     if result.success?
       render_data result.user, status: :ok
     else
-       render_error result.user
+      render_error result.user
     end
   end
 
