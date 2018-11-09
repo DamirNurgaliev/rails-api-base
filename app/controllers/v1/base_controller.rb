@@ -13,10 +13,6 @@ class V1::BaseController < ActionController::API
     respond_with_error(:unauthorized) if current_user.blank?
   end
 
-  def current_user
-    @current_user ||= token && authenticate_for(User)
-  end
-
   def respond_with_resource(resource, status: :ok, location: resource, include: nil, fields: nil)
     render jsonapi: resource, include: include, status: status, location: location, fields: fields
   end
