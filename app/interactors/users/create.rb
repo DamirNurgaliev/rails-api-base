@@ -1,4 +1,4 @@
-class CreateUser
+class Users::Create
   include Interactor
 
   delegate :params, to: :context

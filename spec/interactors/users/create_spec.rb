@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe CreateUser do
+describe Users::Create do
   let(:params) do
     {
       email: "test@test.test",

@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   namespace :v1, defaults: { format: "jsonapi" } do
-    resources :registrations, only: :create
-    resources :tokens, only: :create
-    resource :profile, only: %i[show update destroy]
+    resource :users, only: %i[create show update destroy]
+    resources :tokens, only: %i[create]
   end
 end
