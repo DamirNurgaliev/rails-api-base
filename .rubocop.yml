@@ -39,6 +39,9 @@ RSpec/LetSetup:
 RSpec/EmptyExampleGroup:
   Enabled: false
 
+RSpec/VerifiedDoubles:
+  Enabled: false
+
 Style/AndOr:
   Enabled: false
 

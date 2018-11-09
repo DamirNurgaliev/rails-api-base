@@ -31,7 +31,7 @@ describe V1::UsersController do
       end
 
       context "when jwt token isn't correct" do
-        let(:jwt_token) { instance_double "JwtToken", token: "123" }
+        let(:jwt_token) { double :jwt_token, token: "123" }
 
         example_request "Get User [error]" do
           expect(status).to eq 401
@@ -129,7 +129,7 @@ describe V1::UsersController do
       end
 
       context "when jwt token isn't correct" do
-        let(:jwt_token) { instance_double "JwtToken", token: "123" }
+        let(:jwt_token) { double :jwt_token, token: "123" }
 
         example_request "Delete User [error]" do
           expect(status).to eq 401
