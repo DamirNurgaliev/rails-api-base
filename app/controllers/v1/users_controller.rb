@@ -28,7 +28,7 @@ class V1::UsersController < V1::BaseController
   def destroy
     current_user.destroy
 
-    render_data current_user
+    head :ok
   end
 
   private
