@@ -1,12 +1,11 @@
 shared_context "when JSON API serializer presented" do
   let(:fake_host) { "fakehost.com" }
-  let(:adapter) { :json_api }
 
   let(:default_serialization_options) do
     {
       host: fake_host,
       root: "data",
-      adapter: adapter,
+      adapter: :json_api,
       serializer: described_class
     }
   end
