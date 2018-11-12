@@ -18,6 +18,9 @@ Rails/HasAndBelongsToMany:
 Rails/OutputSafety:
   Enabled: false
 
+Rails/RedundantReceiverInWithOptions:
+  Enabled: false
+
 RSpec/MultipleExpectations:
   Enabled: false
 
@@ -29,6 +32,15 @@ RSpec/RepeatedDescription:
 
 RSpec/MessageSpies:
   EnforcedStyle: receive
+
+RSpec/LetSetup:
+  Enabled: false
+
+RSpec/EmptyExampleGroup:
+  Enabled: false
+
+RSpec/VerifiedDoubles:
+  Enabled: false
 
 Style/AndOr:
   Enabled: false
@@ -56,6 +68,9 @@ Style/EmptyMethod:
     - expanded
 
 Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
   Enabled: false
 
 Style/StringMethods:

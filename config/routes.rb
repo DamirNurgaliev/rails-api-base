@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  namespace :v1, defaults: { format: "jsonapi" } do
+    resource :users, only: %i[create show update destroy]
+    resources :tokens, only: %i[create]
+  end
 end
