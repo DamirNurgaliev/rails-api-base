@@ -5,13 +5,8 @@ describe V1::TokensController do
   resource "JSON API - Tokens" do
     include_context "with JSON API Headers"
 
-    let!(:user) { create :user, email: email, password: password }
+    let!(:user) { create :user, email: email, password: "123456" }
     let(:jwt_token) { build :jwt_token, user: user }
-    let(:interactor_stub) { double "CreateJwt", jwt_token: jwt_token, success?: true }
-
-    before do
-      allow(CreateJwt).to receive(:call).with(email: email, password: password).and_return(interactor_stub)
-    end
 
     post "/v1/tokens" do
       with_options scope: %i[data attributes] do |klass|
@@ -24,11 +19,8 @@ describe V1::TokensController do
 
       let(:expected_data) do
         {
-          "id" => jwt_token.token,
-          "type" => "jwt_tokens",
-          "attributes" => {
-            "token" => jwt_token.token
-          }
+          "id" => jwt_token,
+          "type" => "tokens"
         }
       end
 
@@ -41,10 +33,10 @@ describe V1::TokensController do
       end
 
       context "when params are invalid" do
-        let(:interactor_stub) { double "CreateJwt", success?: false }
+        let(:password) { "wrong_password" }
 
         example_request "Create Token [error]" do
-          expect(status).to eq 401
+          expect(status).to eq 404
         end
       end
     end

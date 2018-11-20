@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :jwt_token do
+  factory :jwt_token, class: Knock::AuthToken do
     transient do
       user { create :user }
 
@@ -8,6 +8,6 @@ FactoryBot.define do
 
     payload { { "sub" => id } }
 
-    initialize_with { new(payload: payload) }
+    initialize_with { new(payload: payload).token }
   end
 end
