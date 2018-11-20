@@ -46,7 +46,7 @@ Content-Type: application/x-www-form-urlencoded</pre>
 
 <pre>{
   "data": {
-    "id": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDI4MTc3MjUsInN1YiI6NDM5fQ.aH1dohq39vPH57-w7QLb0GiqIADLg9WR1x852MUVjaE",
+    "id": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDI4MTgzOTEsInN1YiI6NDY3fQ.rdPpE2ssWGxRqyd_NDHaX2tuR-snkqEvw80fS4p8g-4",
     "type": "tokens"
   }
 }</pre>

@@ -17,7 +17,7 @@
 #### Headers
 
 <pre>Accept: application/vnd.api+json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDI4MTc3MjUsInN1YiI6NDQzfQ.D4FDzWguxig5no0_s6ep1sYuiFkI6wqfARPvTrWegkI
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDI4MTgzOTEsInN1YiI6NDcxfQ.JsTUtP98Kiaii-69FyzWUQnn1-K3yk8THnzJjJMHL-s
 Content-Type: application/x-www-form-urlencoded</pre>
 
 #### Route
@@ -32,7 +32,7 @@ Content-Type: application/x-www-form-urlencoded</pre>
 
 <pre class="request">curl &quot;http://localhost:5000/v1/users&quot; -d &#39;data[attributes][email]=new%40email.com&amp;data[attributes][full_name]=Kylian+Mbappe&amp;data[attributes][password]=12345609&#39; -X PATCH \
 	-H &quot;Accept: application/vnd.api+json&quot; \
-	-H &quot;Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDI4MTc3MjUsInN1YiI6NDQzfQ.D4FDzWguxig5no0_s6ep1sYuiFkI6wqfARPvTrWegkI&quot; \
+	-H &quot;Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDI4MTgzOTEsInN1YiI6NDcxfQ.JsTUtP98Kiaii-69FyzWUQnn1-K3yk8THnzJjJMHL-s&quot; \
 	-H &quot;Content-Type: application/x-www-form-urlencoded&quot;</pre>
 
 ### Response
@@ -49,7 +49,7 @@ Content-Type: application/x-www-form-urlencoded</pre>
 
 <pre>{
   "data": {
-    "id": "443",
+    "id": "471",
     "type": "users",
     "attributes": {
       "email": "new@email.com",

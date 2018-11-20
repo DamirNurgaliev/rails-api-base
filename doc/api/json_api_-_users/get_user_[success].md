@@ -8,7 +8,7 @@
 #### Headers
 
 <pre>Accept: application/vnd.api+json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDI4MTc3MjUsInN1YiI6NDQxfQ.ETZJI9toOsSTqXso1AjyIGwYv3yEfyOTk6uG13SUC5g</pre>
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDI4MTgzOTEsInN1YiI6NDY5fQ.In5SOvO1mMzNp-g6Upc7S0VYBnom2MLbHF1h_BMjGQg</pre>
 
 #### Route
 
@@ -18,7 +18,7 @@ Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDI4MTc3M
 
 <pre class="request">curl -g &quot;http://localhost:5000/v1/users&quot; -X GET \
 	-H &quot;Accept: application/vnd.api+json&quot; \
-	-H &quot;Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDI4MTc3MjUsInN1YiI6NDQxfQ.ETZJI9toOsSTqXso1AjyIGwYv3yEfyOTk6uG13SUC5g&quot;</pre>
+	-H &quot;Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDI4MTgzOTEsInN1YiI6NDY5fQ.In5SOvO1mMzNp-g6Upc7S0VYBnom2MLbHF1h_BMjGQg&quot;</pre>
 
 ### Response
 
@@ -34,7 +34,7 @@ Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NDI4MTc3M
 
 <pre>{
   "data": {
-    "id": "441",
+    "id": "469",
     "type": "users",
     "attributes": {
       "email": "robert@lewandovsky.com",

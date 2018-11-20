@@ -8,8 +8,8 @@
 
 | Name | Description | Required | Scope |
 |------|-------------|----------|-------|
+| full_name | Full Name | false | data[attributes] |
 | email | Email | true | data[attributes] |
-| full_name | Full Name | true | data[attributes] |
 | password | Password | true | data[attributes] |
 
 ### Request
@@ -25,11 +25,11 @@ Content-Type: application/x-www-form-urlencoded</pre>
 
 #### Body
 
-<pre>data[attributes][email]=test%40email.com&data[attributes][full_name]=Richard+Chong&data[attributes][password]=123456</pre>
+<pre>data[attributes][full_name]=Richard+Chong&data[attributes][email]=test%40email.com&data[attributes][password]=123456</pre>
 
 #### cURL
 
-<pre class="request">curl &quot;http://localhost:5000/v1/users&quot; -d &#39;data[attributes][email]=test%40email.com&amp;data[attributes][full_name]=Richard+Chong&amp;data[attributes][password]=123456&#39; -X POST \
+<pre class="request">curl &quot;http://localhost:5000/v1/users&quot; -d &#39;data[attributes][full_name]=Richard+Chong&amp;data[attributes][email]=test%40email.com&amp;data[attributes][password]=123456&#39; -X POST \
 	-H &quot;Accept: application/vnd.api+json&quot; \
 	-H &quot;Content-Type: application/x-www-form-urlencoded&quot;</pre>
 
@@ -47,7 +47,7 @@ Content-Type: application/x-www-form-urlencoded</pre>
 
 <pre>{
   "data": {
-    "id": "442",
+    "id": "470",
     "type": "users",
     "attributes": {
       "email": "test@email.com",
