@@ -41,8 +41,8 @@ describe V1::UsersController do
 
     post "/v1/users" do
       with_options scope: %i[data attributes] do |klass|
+        klass.parameter :full_name, "Full Name"
         klass.parameter :email, "Email", required: true
-        klass.parameter :full_name, "Full Name", required: true
         klass.parameter :password, "Password", required: true
       end
 
