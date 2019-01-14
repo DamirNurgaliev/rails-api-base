@@ -16,7 +16,7 @@ describe V1::UsersController do
       let(:expected_data) do
         {
           "id" => user.id.to_s,
-          "type" => "users",
+          "type" => "user",
           "attributes" => {
             "email" => "robert@lewandovsky.com",
             "full_name" => "Robert L."
@@ -55,7 +55,7 @@ describe V1::UsersController do
       let(:expected_data) do
         {
           "id" => created_user.id.to_s,
-          "type" => "users",
+          "type" => "user",
           "attributes" => {
             "email" => "test@email.com",
             "full_name" => "Richard Chong"
@@ -96,7 +96,7 @@ describe V1::UsersController do
       let(:expected_data) do
         {
           "id" => user.id.to_s,
-          "type" => "users",
+          "type" => "user",
           "attributes" => {
             "email" => "new@email.com",
             "full_name" => "Kylian Mbappe"

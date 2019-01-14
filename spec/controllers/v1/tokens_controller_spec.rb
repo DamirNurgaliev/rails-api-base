@@ -20,7 +20,7 @@ describe V1::TokensController do
       let(:expected_data) do
         {
           "id" => jwt_token,
-          "type" => "tokens"
+          "type" => "token"
         }
       end
 

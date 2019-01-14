@@ -2,14 +2,14 @@ class V1::UsersController < V1::BaseController
   skip_before_action :authenticate_user, only: :create
 
   def show
-    render_data current_user
+    render json: UserSerializer.new(current_user)
   end
 
   def create
     result = Users::Create.call(params: user_params)
 
     if result.success?
-      render_data result.user, status: :created
+      render json: UserSerializer.new(result.user), status: 201
     else
       render_error result.user
     end
@@ -19,7 +19,7 @@ class V1::UsersController < V1::BaseController
     result = Users::Update.call(user: current_user, params: user_params)
 
     if result.success?
-      render_data result.user, status: :ok
+      render json: UserSerializer.new(result.user)
     else
       render_error result.user
     end
@@ -34,6 +34,6 @@ class V1::UsersController < V1::BaseController
   private
 
   def user_params
-    jsonapi_params(only: %i[full_name email password])
+    restify_param(:user).require(:user).permit(:email, :full_name, :password)
   end
 end

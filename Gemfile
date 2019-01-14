@@ -5,12 +5,13 @@ ruby "2.5.1"
 gem "pg"
 gem "rails", "5.2.1"
 
-gem "active_model_serializers"
 gem "bcrypt"
+gem "fast_jsonapi"
 gem "interactor"
 gem "knock"
 gem "puma"
 gem "rack-cors"
+gem "restful-jsonapi"
 
 group :development do
   gem "foreman"
