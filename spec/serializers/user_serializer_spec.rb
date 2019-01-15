@@ -5,7 +5,6 @@ describe UserSerializer do
 
   let(:user) { create :user }
   let(:serializing_model) { user }
-  let(:serialization_options) { { instance_stats: {} } }
   let(:expected_serialization_result_fields) { %w[full_name email] }
 
   it_behaves_like "a json_api serializer"

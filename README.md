@@ -11,7 +11,8 @@ Lightweight base or "skeleton" application for Ruby on Rails 5+ projects. Built 
 
 * [Knock](https://github.com/nsarno/knock) for user's auth.
 * [Rack-Cors](https://github.com/cyu/rack-cors) support for Cross-Origin Resource Sharing.
-* [Active Model Serializers](https://github.com/rails-api/active_model_serializers) for objects serialization.
+* [Fast JSON API](https://github.com/Netflix/fast_jsonapi) for objects serialization.
+* [Restful::Jsonapi](https://github.com/Netflix/fast_jsonapi) for objects deserialization.
 * [Interactors](https://github.com/collectiveidea/interactor) encapsulates application's business logic
 * [Puma](https://github.com/puma/puma) as Rails web server
 * [Foreman](https://github.com/ddollar/foreman) to manage Procfile-based application
