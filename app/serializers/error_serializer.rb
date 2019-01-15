@@ -6,7 +6,7 @@ class ErrorSerializer
   end
 
   def to_hash
-    errors = object.errors.messages.map do |field, errors|
+    object_errors = object.errors.messages.map do |field, errors|
       errors.map do |error_message|
         {
           source: { pointer: "/data/attributes/#{field}" },
@@ -15,6 +15,6 @@ class ErrorSerializer
       end
     end
 
-    { "errors" => errors.flatten }
+    { "errors" => object_errors.flatten }
   end
 end

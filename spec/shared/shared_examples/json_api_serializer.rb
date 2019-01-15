@@ -1,25 +1,5 @@
 shared_context "when JSON API serializer presented" do
-  let(:fake_host) { "fakehost.com" }
-
-  let(:default_serialization_options) do
-    {
-      host: fake_host,
-      root: "data",
-      adapter: :json_api,
-      serializer: described_class
-    }
-  end
-
-  let(:serialization_options) { {} }
-
-  let(:serializable_resource) do
-    ActiveModelSerializers::SerializableResource.new(
-      serializing_model,
-      default_serialization_options.merge(serialization_options)
-    )
-  end
-
-  let(:serializer_instance) { serializable_resource.serializer_instance }
+  let(:serializable_resource) { described_class.new(serializing_model) }
   let(:result) { JSON.parse serializable_resource.to_json }
   let(:data_block) { result["data"] }
   let(:included_block) { result["included"] }

@@ -1,5 +1,5 @@
 class TokenSerializer < ApplicationSerializer
-  set_id :token do |object|
-    object.token
-  end
+  delegate :token, to: :object
+
+  set_id :token
 end
