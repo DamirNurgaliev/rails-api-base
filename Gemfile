@@ -1,9 +1,9 @@
 source "https://rubygems.org"
 
-ruby "2.5.1"
+ruby "2.6.3"
 
 gem "pg"
-gem "rails", "5.2.1"
+gem "rails", "5.2.3"
 
 gem "bcrypt"
 gem "fast_jsonapi"
