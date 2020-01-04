@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :jwt_token, class: Knock::AuthToken do
+  factory :jwt_token, class: "Knock::AuthToken" do
     transient do
       user { create :user }
 

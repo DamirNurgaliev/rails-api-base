@@ -4,7 +4,7 @@ require "spec_helper"
 require File.expand_path("../config/environment", __dir__)
 require "rspec/rails"
 
-Dir[Rails.root.join("spec", "{shared,support}", "**", "*.rb")].each { |f| require f }
+Dir[Rails.root.join("spec", "{shared,support}", "**", "*.rb")].sort.each { |f| require f }
 
 RSpec.configure do |config|
   config.use_transactional_fixtures = true

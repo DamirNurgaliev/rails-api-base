@@ -12,15 +12,6 @@ AllCops:
     - vendor/**/*
     - tmp/**/*
 
-Rails/HasAndBelongsToMany:
-  Enabled: false
-
-Rails/OutputSafety:
-  Enabled: false
-
-Rails/RedundantReceiverInWithOptions:
-  Enabled: false
-
 RSpec/MultipleExpectations:
   Enabled: false
 
@@ -82,7 +73,7 @@ Metrics/LineLength:
 Metrics/BlockLength:
   Enabled: false
 
-Layout/AlignParameters:
+Layout/ParameterAlignment:
   EnforcedStyle: with_fixed_indentation
   SupportedStyles:
     - with_first_parameter
