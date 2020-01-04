@@ -3,7 +3,7 @@ source "https://rubygems.org"
 ruby "2.5.1"
 
 gem "pg"
-gem "rails", "5.2.2.1"
+gem "rails", "~> 6.0"
 
 gem "bcrypt"
 gem "fast_jsonapi"
