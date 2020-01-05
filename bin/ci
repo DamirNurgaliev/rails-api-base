@@ -2,5 +2,5 @@
 
 set -e
 
-bin/rubocop --display-style-guide --config .rubocop.yml
-bin/rspec spec
+docker-compose exec app bin/rubocop --display-style-guide --config .rubocop.yml
+docker-compose exec app bin/rspec spec
